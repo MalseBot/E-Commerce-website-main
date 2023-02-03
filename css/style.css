@@ -1,0 +1,195 @@
+h1,h2,h3,h4,h5,h6,p,span
+{
+cursor: default;
+}
+.h1{
+font-size: 600%;
+}
+.h2{
+    font-size: 500%;
+}
+.h3{
+    font-size: 400%;
+}
+.h4{
+    font-size: 300%;
+}
+.h5{
+    font-size: 125%;
+}
+.h6{
+    font-size: 100%;
+}
+p{
+    color: rgb(126, 125, 125);
+}
+.img-hero{
+    background-image: url(/img/hero4.png) ;
+         background-position: center;
+         background-size: cover;
+      
+  }
+.textBg{
+    background-image:url(/img/button.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.position-absolute-end-0{
+    position: absolute;
+    right: 0%;
+}
+.shadow-inner{
+    box-shadow: 0px 0px 10px 1px #6c757d52;
+}
+.cp-1{
+    border-radius: 5px;
+    background-color:#E7AD8D7e ;
+}
+.cp-2{
+    border-radius: 5px;
+    background-color: #B8DD7F7e;
+}
+.cp-3{
+    border-radius: 5px;
+    background-color:#89BFE17e ;
+}
+.cp-4{
+    border-radius: 5px;
+    background-color: #A390DC7e;
+}
+.cp-5{
+    border-radius: 5px;
+    background-color: #e189bc7e;
+}
+.cp-6{
+    border-radius: 5px;
+    background-color: #EDC5D27e;
+}
+.text-col{
+    color:#66afd6 ;
+}
+@media  (max-width:990px) {
+    .h1{
+        font-size: 300%;
+        }
+        .h2{
+            font-size: 300%;
+        }
+        .h3{
+            font-size: 200%;
+        }
+        .h4{
+            font-size: 100%;
+        }
+        .h5{
+            font-size: 75%;
+        }
+        .h6{
+            font-size: 50%;
+        }
+        .position-absolute-end-0{
+            position:unset;
+        }
+}
+.img-serv{
+    background-image: url(/img/banner/b2.jpg);
+    height: 380px;
+    background-size:contain;
+}
+.bg-1{
+    background-image: url(/img/banner/b17.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 344px;
+    width: 626px;
+}
+.bg-2{
+    background-image: url(/img/banner/b10.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 344px;
+    width: 626px;
+}
+.bg-3{
+    background-image: url(/img/banner/b7.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+}
+.bg-4{
+    background-image: url(/img/banner/b4.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+}
+.bg-5{
+    background-image: url(/img/banner/b18.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+}
+.bg-6{
+    background-color: #07285e;
+
+}
+.bg-7{
+    background-image: url(/img/banner/b14.png) ;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top--50{
+    top: -120%;
+    left: 10%;
+    width: min-content;
+    height: min-content;
+}
+.inp-spec{
+    width: 250px;
+    border-radius: 5px 0 0px 5px;
+}
+.btn-spec{
+    background-color: rgb(75, 173, 141);
+    color: white;
+    border-radius:0 5px 5px 0 ;
+}
+.hover-link:hover{
+    transition-property: color;
+    color: rgb(52, 172, 52);
+}
+.hover-link::after{
+    content: " ";
+    position: absolute;
+    width: 30px;
+    border: 2px solid rgb(52, 172, 52);
+    border-radius: 5px;
+    left: 10px;
+    top: 30px;
+    transform: translateX(-40px);
+}
+.hover-link:hover::after{
+    transform: translateX(0px);
+    transition-duration: 0.3s;
+}
+.hover-item:hover{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* shop page CSS */
+
+.heading{
+   height: 320px;
+   margin-top: 50px;
+   background-image: url(/img/banner/b1.jpg);
+   background-position: center;
+   background-size: cover;
+}
