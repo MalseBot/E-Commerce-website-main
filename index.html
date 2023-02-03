@@ -32,6 +32,46 @@
           </nav>
     </section>
 
+    <div class="position-fixed pro-info-bg d-flex justify-content-center align-items-center overflow-scroll " id="proInfo">
+      <div>
+        <div class="pro-info row row-cols-1 row-cols-sm-2 p-3 m-5 position-relative">
+          <div class="">
+            <i class="fa-regular fa-circle-xmark position-absolute end-0 m-2 top-0 pointer" onclick="hideDets()"></i>
+            <div class=" ms-3">
+              <div class="d-flex flex-column justify-content-center align-items-center m-2 w-75 ">
+                <img src="./img/products/f1.jpg" id="mainImg" class="pro-img w-100" alt="">
+              <div class="d-flex w-25 justify-content-evenly">
+                <img src="./img/products/f1.jpg" class="w-100 m-2 smalling hover-item " alt="">
+                <img src="./img/products/f2.jpg" alt="" class="w-100 m-2 smalling hover-item">
+                <img src="./img/products/f3.jpg" alt="" class="w-100 m-2 smalling hover-item">
+                <img src="./img/products/f4.jpg" alt="" class="w-100 m-2 smalling hover-item">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <h4>Home/T-shirt</h4>
+            <h3>Men's Fashion T shirt</h3>
+            <h2>$139.00</h2>
+            <select name="Size" id="" class="form-select w-25" required>
+              <option value="" disabled selected hidden>Size</option>
+              <option value="">S</option>
+              <option value="">M</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
+            <input type="number" name="" class="input-group inp-size m-1 d-inline-block" maxlength="8" max="8" min="1" min id="" required>
+            <button type="submit" class="d-inline-block btn btn-success m-1">Add to Cart</button>
+            <h3>Product details</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iste temporibus assumenda, aliquid asperiores ullam! Nemo, provident! Deleniti accusantium hic amet adipisci enim vel ratione eligendi eum, delectus, dolor nostrum.</p>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="">
         <div class="img-hero vh-100 d-flex justify-content-center align-items-start flex-column  ps-5">
             <h5 class="h5">Trade-in-offer</h5>
@@ -75,7 +115,7 @@
         <h2>Featured products</h2>
         <p>summer collection new morden design</p>
         <div class="row col-12 gap-4 justify-content-center">
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -85,7 +125,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -95,7 +135,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -105,7 +145,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -115,7 +155,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -125,7 +165,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -135,7 +175,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f7.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -145,7 +185,7 @@
                   <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
                 </div>
               </div>
-              <div class="card shadow-inner hover-item" style="width: 18rem;">
+              <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
                 <img src="/img/products/f8.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title">adidas</h4>
@@ -170,7 +210,7 @@
       <h2>new arrival</h2>
       <p>summer collection new morden design</p>
       <div class="row col-12 gap-4 justify-content-center">
-          <div class="card shadow-inner hover-item" style="width: 18rem;">
+          <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -180,7 +220,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inn hover-item" style="width: 18rem;">
+            <div class="card shadow-inn hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -190,7 +230,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -200,7 +240,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -210,7 +250,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -220,7 +260,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n6.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -230,7 +270,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n7.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
@@ -240,7 +280,7 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a>
               </div>
             </div>
-            <div class="card shadow-inner hover-item" style="width: 18rem;">
+            <div class="card shadow-inner hover-item" onclick="revealDets()" style="width: 18rem;">
               <img src="/img/products/n8.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">adidas</h4>
