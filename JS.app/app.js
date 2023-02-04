@@ -20,17 +20,21 @@ function pages2() {
 let mainImg = document.getElementById("mainImg");
 let smalling =document.getElementsByClassName("smalling");
 
-smalling[0].onclick= function(){
-    mainImg.src=smalling[0].src;
-}
-smalling[1].onclick= function(){
-    mainImg.src=smalling[1].src;
-}
-smalling[2].onclick= function(){
-    mainImg.src=smalling[2].src;
-}
-smalling[3].onclick= function(){
-    mainImg.src=smalling[3].src;
+try {
+    smalling[0].onclick= function clickImg(){
+        mainImg.src=smalling[0].src;
+    }
+    smalling[1].onclick= function clickImg(){
+        mainImg.src=smalling[1].src;
+    }
+    smalling[2].onclick= function clickImg(){
+        mainImg.src=smalling[2].src;
+    }
+    smalling[3].onclick= function clickImg(){
+        mainImg.src=smalling[3].src;
+    }
+} catch (error) {
+    
 }
 
 let proInfo = document.getElementById("proInfo")
@@ -43,3 +47,13 @@ function hideDets(){
 function revealDets(){
     proInfo.classList.remove("visually-hidden")
 }
+// moving text
+aboutPage ={
+    about :{
+        init :
+        function moving() {
+            let move=document.getElementById("bitch");
+            return move.value; 
+        } 
+            }
+    };
