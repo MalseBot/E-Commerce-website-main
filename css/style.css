@@ -67,7 +67,7 @@ p{
     background-color: #EDC5D27e;
 }
 .text-col{
-    color:#66afd6 ;
+    color:#008fdb ;
 }
 @media  (max-width:990px) {
     .h1{
@@ -90,6 +90,10 @@ p{
         }
         .position-absolute-end-0{
             position:unset;
+        }
+        /* contact page */
+        .profile{
+            width: 500px;
         }
 }
 .img-serv{
@@ -259,4 +263,8 @@ p{
 }
 .border-radius{
     border-radius: 10px;
+}
+/* contact page */
+.profile-pic{
+    border-radius: 50%;
 }
