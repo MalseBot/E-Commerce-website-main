@@ -25,7 +25,7 @@
                     <li class="list-inline-item p-0 nav-item "><a href="./blog.html" class="text-decoration-none nav-link fw-bold position-relative hover-link overflow-hidden">blog</a></li>
                     <li class="list-inline-item p-0 nav-item "><a href="/About.html" class="text-decoration-none nav-link fw-bold position-relative hover-link overflow-hidden">about</a></li>
                     <li class="list-inline-item p-0 nav-item "><a href="/Contact.html" class="text-decoration-none nav-link fw-bold position-relative hover-link overflow-hidden">contact</a></li>
-                    <li class="list-inline-item p-0 nav-item "><a href="#" class="text-decoration-none nav-link fw-bold "><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="list-inline-item p-0 nav-item "><a href="/cart.html" class="text-decoration-none nav-link fw-bold position-relative"><i class="fa-solid fa-cart-shopping"></i><span class="cart-number position-absolute" id="cartNumber">0</span></a></li>
                 </ul>
               </div>
             </div>
@@ -36,7 +36,7 @@
       <div>
         <div class="pro-info row row-cols-1 row-cols-sm-2 p-3 mt-5 position-relative">
           <div class="">
-            <i class="fa-regular fa-circle-xmark position-absolute end-0 m-2 top-0 pointer" onclick="hideDets()"></i>
+            <i class="fa-regular fa-circle-xmark position-absolute end-0 m-3 top-0 pointer" onclick="hideDets()"></i>
             <div class=" ms-3">
               <div class="d-flex flex-column justify-content-center align-items-center m-2 w-75 ">
                 <img src="./img/products/f1.jpg" id="mainImg" class="pro-img w-100" alt="">
@@ -62,7 +62,7 @@
               <option value="">XL</option>
             </select>
             <input type="number" name="" class="input-group inp-size m-1 d-inline-block" maxlength="8" max="8" min="1" min id="" required>
-            <button type="submit" class="d-inline-block btn btn-success m-1">Add to Cart</button>
+            <button  id="productSubmit" class="d-inline-block btn btn-success m-1">Add to Cart</button>
             <h3>Product details</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iste temporibus assumenda, aliquid asperiores ullam! Nemo, provident! Deleniti accusantium hic amet adipisci enim vel ratione eligendi eum, delectus, dolor nostrum.</p>
   
@@ -349,42 +349,44 @@
         </div>
       </div>
     </div>
-    <div class="text-bg-light p-5 row  row-cols-lg-6 row-cols-md-4 row-cols-sm-2">
-      <div class="flex-grow-1">
-        <a href="" class=""><img src="./img/logo.png" alt="logo"></a>
-        <h5>Contact</h5>
-        <p><span class="fw-bold">address:</span> 562 wellington road, street 32,san francisco</p>
-        <p><span class="fw-bold">phone:</span> +01 2222365 /(+91) 0123456789</p>
-        <p><span class="fw-bold">hours:</span> 10:00 - 18:00.mon - sat</p>
-        <h5>follow us</h5>
-        <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="text-black"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-      <div>
-        <h5>about</h5>
-        <p>about us</p>
-        <p>delivery information</p>
-        <p>privacy policy</p>
-        <p>terms & condtions</p>
-        <p>contact us</p>
-      </div>
-      <div>
-        <h5>my account</h5>
-        <p>sign in</p>
-        <p>view cart</p>
-        <p>my wishlist</p>
-        <p>track my order</p>
-        <p>help</p>
-      </div>
-      <div class="flex-grow-1">
-        <h5>install app</h5>
-        <p>from app store or google play</p>
-        <a href="#"><img src="./img/pay/play.jpg" alt=""></a>
-        <a href="#"><img src="./img/pay/app.jpg" alt=""></a>
-        <p>secured payment gateways</p>
-        <a href="#"><img src="./img/pay/pay.png" alt=""></a>
+    <div class="container ">
+      <div class="text-bg-light row p-5 row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+        <div class="">
+          <a href="" class=""><img src="./img/logo.png" alt="logo"></a>
+          <h5>Contact</h5>
+          <p><span class="fw-bold">address:</span> 562 wellington road, street 32,san francisco</p>
+          <p><span class="fw-bold">phone:</span> +01 2222365 /(+91) 0123456789</p>
+          <p><span class="fw-bold">hours:</span> 10:00 - 18:00.mon - sat</p>
+          <h5>follow us</h5>
+          <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-black"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div>
+          <h5>about</h5>
+          <p>about us</p>
+          <p>delivery information</p>
+          <p>privacy policy</p>
+          <p>terms & condtions</p>
+          <p>contact us</p>
+        </div>
+        <div>
+          <h5>my account</h5>
+          <p>sign in</p>
+          <p>view cart</p>
+          <p>my wishlist</p>
+          <p>track my order</p>
+          <p>help</p>
+        </div>
+        <div class="">
+          <h5>install app</h5>
+          <p>from app store or google play</p>
+          <a href="#"><img src="./img/pay/play.jpg" alt=""></a>
+          <a href="#"><img src="./img/pay/app.jpg" alt=""></a>
+          <p>secured payment gateways</p>
+          <a href="#"><img src="./img/pay/pay.png" alt=""></a>
+        </div>
       </div>
     </div>
   </section>

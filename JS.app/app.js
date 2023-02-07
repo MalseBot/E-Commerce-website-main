@@ -3,22 +3,36 @@
     let Pp2 =document.getElementById("Pp2");
     let P1 =document.getElementById("page1");
     let P2 =document.getElementById("page2");
+
+    let productSubmit=document.getElementById("productSubmit");
+
+    let mainImg = document.getElementById("mainImg");
+    let smalling =document.getElementsByClassName("smalling");
+
+    let product=[
+        {
+            name : 'T-shirt',
+            price : 78,
+            inCart:1,
+            totalCost:78
+        }
+    ]
+
     function pages1() {
     Pp1.classList.add("disabled")
     Pp2.classList.remove("disabled") 
     P2.classList.add("visually-hidden")
     P1.classList.remove("visually-hidden")
-}
+};
 function pages2() {
     Pp2.classList.add("disabled")
     Pp1.classList.remove("disabled")
     P1.classList.add("visually-hidden")
     P2.classList.remove("visually-hidden")
-}
+};
 
 // product details images
-let mainImg = document.getElementById("mainImg");
-let smalling =document.getElementsByClassName("smalling");
+
 
 try {
     smalling[0].onclick= function clickImg(){
@@ -35,25 +49,58 @@ try {
     }
 } catch (error) {
     
-}
-
-let proInfo = document.getElementById("proInfo")
-const proDetails =document.getElementsByClassName("prodetails")
+};
 
 function hideDets(){
+    let proInfo = document.getElementById("proInfo");
     proInfo.classList.add("visually-hidden");
-}
+};
 
-function revealDets(){
-    proInfo.classList.remove("visually-hidden")
-}
-// moving text
-aboutPage ={
-    about :{
-        init :
-        function moving() {
-            let move=document.getElementById("bitch");
-            return move.value; 
-        } 
-            }
+function revealDets() {
+    let proInfo = document.getElementById("proInfo");
+    proInfo.classList.remove("visually-hidden");
+};
+
+// shopping cart
+
+productSubmit.addEventListener('click',()=>{
+    productNumbering();
+});
+function productNumbering() {
+    let cartNumber =localStorage.getItem('cartNumber');
+
+    cartNumber = parseInt( cartNumber);
+
+    if ( cartNumber ) {
+        localStorage.setItem('cartNumber', cartNumber + 1);
+        document.getElementById('cartNumber').textContent = cartNumber + 1;
+    } else{
+        localStorage.setItem('cartNumber', 1);
+        document.getElementById('cartNumber').textContent = 1;
     };
+    setItem(product);
+};
+
+function onlaodCartNumber (){
+let  cartNumber =localStorage.getItem('cartNumber');
+if (cartNumber) {
+    document.getElementById('cartNumber').textContent=cartNumber
+};
+}
+onlaodCartNumber();
+
+function setItem(product) {
+    let cartItem=localStorage.getItem('product');
+
+    cartItem= JSON.parse(cartItem);
+
+    if (cartItem != null) {
+        product[0].inCart +=1;
+    };
+
+    product[0].totalCost=product[0].inCart * product[0].price
+
+    cartItem=product
+
+    localStorage.setItem('product',JSON.stringify(cartItem));
+};
